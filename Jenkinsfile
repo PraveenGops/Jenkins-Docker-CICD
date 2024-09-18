@@ -1,11 +1,12 @@
 pipeline {
   agent {
-    docker { image "node:latest"}
+    docker { image "node:latest" }
   }
-  stages{
-    stage("Version check")
+  stages {
+    stage("Version check") {
       steps {
         sh 'node --version'
             }
         }
+  }
 }
