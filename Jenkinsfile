@@ -9,5 +9,13 @@ pipeline {
                 }
               }
           }
+    stage('Front-end') {
+      agent {
+        docker { image 'node:16-alpine' }
+      }
+      steps {
+        sh 'node --version'
   }
+}
+} 
 }
