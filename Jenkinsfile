@@ -1,7 +1,7 @@
 pipeline {
   agent any 
 stages {
-  stage ("Back end")
+  stage("Back end")
     agent {
       docker {image "maven:latest"}
         steps {
